@@ -1,0 +1,46 @@
+{
+    "books": [{
+        "id": 1,
+        "title": "new book",
+        "description": "<p>ffffffffffffffffffffffffffffff</p>",
+        "imgs": ["/uploadedfiles/new_book_1_0.png"],
+        "pdfUrl": "/uploadedfiles/new_book_1.pdf",
+        "userid": 1
+    }, {
+        "id": 2,
+        "title": "another title",
+        "description": "<p>vvvvvvvvvvvvvvvvvvvvvvvvvvvv</p>",
+        "imgs": ["/uploadedfiles/another_title_1_0.png"],
+        "pdfUrl": "/uploadedfiles/another_title_1.pdf",
+        "userid": 1
+    }, {
+        "id": 3,
+        "title": "test book",
+        "description": "<p>mmmmmmmmmmmmmmmmmmmmmmm</p>",
+        "imgs": ["/uploadedfiles/test_book_1_0.png", "/uploadedfiles/test_book_1_1.jpg", "/uploadedfiles/test_book_1_2.png"],
+        "pdfUrl": "/uploadedfiles/test_book_1.pdf",
+        "userid": 1
+    }, {
+        "id": 4,
+        "title": "super new book",
+        "description": "<p>hhhhhhhhhhhhhhhhhhhhhhhh</p>",
+        "imgs": ["/uploadedfiles/super_new_book_1_0.jpg", "/uploadedfiles/super_new_book_1_1.jpeg", "/uploadedfiles/super_new_book_1_2.jpg"],
+        "pdfUrl": "/uploadedfiles/super_new_book_1.pdf",
+        "userid": 1
+    }, {
+        "id": 5,
+        "title": "ultra new book",
+        "description": "<p>ffffffffffffffffffff</p>",
+        "imgs": ["/uploadedfiles/ultra_new_book_1_0.jpg", "/uploadedfiles/ultra_new_book_1_1.jpg", "/uploadedfiles/ultra_new_book_1_2.jpg", "/uploadedfiles/ultra_new_book_1_3.jpeg"],
+        "pdfUrl": "/uploadedfiles/ultra_new_book_1.pdf",
+        "userid": 1
+    }, {
+        "id": 6,
+        "title": "another one bites the dust",
+        "description": "<p>sssssssssssssssssssssssssssssssss</p>",
+        "imgs": ["/uploadedfiles/another_one_bites_the_dust_1_0.jpg", "/uploadedfiles/another_one_bites_the_dust_1_1.jpg", "/uploadedfiles/another_one_bites_the_dust_1_2.png"],
+        "pdfUrl": "/uploadedfiles/another_one_bites_the_dust_1.pdf",
+        "userid": 1
+    }],
+    "newId": 7
+}
