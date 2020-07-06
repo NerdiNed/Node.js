@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>file upload</title>
+</head>
+
+<body>
+    <h2>file upload</h2>
+    <!-- enctype="multipart/form-data" has to be added so files with different data types can be read -->
+    <form action="/" method="post" enctype="multipart/form-data"> 
+        <input type="text" name="username" placeholder="enter your name">
+        <br>
+        <input type="file" name="photo">
+        <br>
+        <input type="submit" value="send">
+    </form>
+</body>
+
+</html>
