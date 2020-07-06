@@ -1,0 +1,11 @@
+{
+  "name": "1-nodejs-start",
+  "version": "1.0.0",
+  "description": "this is the first node app that i am creating in my lesson",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app js "
+  },
+  "author": "Neda Dehghan",
+  "license": "ISC"
+}
