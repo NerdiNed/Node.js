@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+          <%= title %>                  
+    </title>
+</head>
+<body>
+    <h2>hello fbw5</h2>
+
+<% fruits.forEach(fruit =>{ %>
+    <div class="fruitBasket">
+        <h2><%= fruit %> </h2>  
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel culpa iste, vero temporibus doloremque et perspiciatis quod quo animi! Commodi iusto nisi ipsam tempora ullam nostrum molestias laborum minus consectetur!</p>
+    </div>
+<% }) %> 
+
+<!-- this will import the footer from the footer.ejs and i can pass more parameters that i want to include to it in this case : footerName-->
+<%- include('partials/footer',{footerName:'some footer name'}); -%>    
+
+<!-- i want following div/line to be repeated for each fruit-->
+    <!-- <div class="fruitBasket">
+        <h2>fruit name</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel culpa iste, vero temporibus doloremque et perspiciatis quod quo animi! Commodi iusto nisi ipsam tempora ullam nostrum molestias laborum minus consectetur!</p>
+    </div> -->
+</body>
+</html>
