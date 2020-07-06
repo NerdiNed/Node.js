@@ -11,7 +11,7 @@ const { MongoClient, ObjectId } = require('mongodb') //*2
 const app = express()
 
 // URL connection string 
-const connectionString = 'mongodb+srv://user1:12345@cluster0.2yu3i.mongodb.net/planetNerd?retryWrites=true&w=majority'
+const connectionString = 'mongodb+srv://username:password@cluster0.2yu3i.mongodb.net/databasename?retryWrites=true&w=majority'
 
 // to read the send json data// to get the info from the user
 app.use(express.urlencoded({extended: false}))
