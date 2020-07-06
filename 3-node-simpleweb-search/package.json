@@ -1,0 +1,15 @@
+{
+  "name": "3-node-simpleweb-search",
+  "version": "1.0.0",
+  "main": "nmp init",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "nodemailer": "^6.4.7"
+  }
+}

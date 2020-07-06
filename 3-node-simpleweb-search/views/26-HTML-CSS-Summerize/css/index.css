@@ -1,0 +1,123 @@
+/* navigation start here */
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+    display: flex;
+}
+nav>ul>li{
+    margin: 10px;
+    background-color: darkgrey;
+    border-radius: 10px 0 10px 0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+}
+nav>ul>li:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.514);
+    transform: scale(1.2);
+}
+nav>ul>li:hover>a{
+    color: white;
+}
+nav>ul>li>a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    
+}
+/* navigation ends here */
+/* banner start here */
+.banner{
+    height: 80vh;
+    background-image: url('/hero');
+    background-position-y:40% ;
+    background-position-x:30% ;
+    clip-path: polygon(0 0,100% 0,100% 60vh,0 80vh);
+    margin-top: 10px;
+
+}
+/* banner end here */
+/* cards section starts here */
+.cards{
+    width: 60vw;
+    margin: auto;
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.card{
+border: 2px solid gray;
+width: 200px;
+
+}
+.cards>h2{
+    text-align: center;
+}
+.card-head>h3{
+text-align: center;
+}
+.card-content{
+    margin: 5px;
+    border-top: 1px solid gray;
+}
+/* cards section ends here */
+/* footer starts here */
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgba(0, 0, 0, 0.74);
+}
+.logo-container>img{
+    width:150px
+}
+.contact-container>ul,
+.social{
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+.contact-container>ul>li>a, 
+.social>li>a{
+    color:white;
+    text-decoration: none;
+}
+.input-container>input,.input-container>textarea {
+    margin: 10px;
+}
+.footer-btn{
+    margin-left: 10px;
+    border-radius: 10px ;
+}
+
+/* footer ends here */
+
+
+@media only screen and (max-width:480px){
+    nav>ul{
+        flex-direction: column;
+    }
+    nav>ul>li>a{
+        text-align: center;
+    }
+    nav>ul>li{
+        margin: 3px;
+    }
+    .cards-container{
+        flex-direction: column;
+    }
+    .cards{
+        margin: 0;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}
