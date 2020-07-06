@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header" >Register Here and Now</h1>
+    <input type="text" name="" id="usernameInp" placeholder="username">
+    <br />
+    <input type="text" name="" id="password">
+    <br />
+    <button id="registerBtn">register</button>
+
+    <script>
+
+document.querySelector('#registerBtn').addEventListener('click', e =>{
+    e.preventDefault()
+    const username = document.querySelector('#usernameInp').value.trim();
+    const password = document.querySelector('#password').value.trim();
+if(username && password){
+
+    let data = {
+    username,
+    password,
+};
+
+// call the async function for the fetch
+postData('/register', data).then((data)=>{
+    console.log(data);
+    // check if everything went right
+    if(data === 1){
+        alert("registration was a success")
+    //     const header = document.querySelector('#header')
+    //     header.innerHTML = 'your registration was successful';
+    //     header.style.color = 'green';
+         document.querySelector('#usernameInp').value = ""
+         document.querySelector('#password').value = ""
+    } else {
+        if(data === 3){
+        alert("this Username already exists")
+    } else {
+        if(data === 2){
+        alert("server error")
+      }
+     }
+    }
+    // if(data === 4 ){
+    //     alert("ups, something else went wrong, contact the admin please ")
+    // } 
+
+  });
+
+} else {
+    alert("Please fill out all Fields")
+    }
+
+});
+
+// FETCH
+// create a async function for the fetch
+async function postData(url ="", data ={}){
+    const response = await fetch(url, {
+        method:"POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body:JSON.stringify(data)
+    })
+    return response.json()
+}
+
+
+    </script>
+</body>
+</html>
