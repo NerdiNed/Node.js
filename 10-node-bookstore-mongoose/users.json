@@ -1,0 +1,20 @@
+{
+  "users": [{
+    "id": "1",
+    "email": "nerdined7@gmail.com",
+    "password": "sha1$b05cb42e$1$ead5a23ee45905c8295b975f1b0b086752f77e71"
+  }, {
+    "id": 2,
+    "email": "ss@mail.com",
+    "password": "sha1$b05cb42e$1$ead5a23ee45905c8295b975f1b0b086752f77e71"
+  }, {
+    "id": 3,
+    "email": "coconutpower@yahoo.com",
+    "password": "sha1$b05cb42e$1$ead5a23ee45905c8295b975f1b0b086752f77e71"
+  }, {
+    "id": 4,
+    "email": "fake@mail",
+    "password": "sha1$b05cb42e$1$ead5a23ee45905c8295b975f1b0b086752f77e71"
+  }],
+  "newId": 5
+}
