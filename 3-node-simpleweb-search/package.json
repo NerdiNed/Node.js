@@ -10,6 +10,6 @@
   "keywords": [],
   "description": "",
   "dependencies": {
-    "nodemailer": "^6.4.7"
+    "nodemailer": "^6.4.16"
   }
 }
